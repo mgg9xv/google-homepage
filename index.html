@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Google</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Google (mggwxyz)</title>
+    <link rel="icon" href="./images/google-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/google-homepage.css">
 </head>
 <body>
     <div class="container">
         <header>
             <ul class="nav">
-                <li>Michael</li>
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">You</a></li>
             </ul>
         </header>
-        <div id="search_section">
-            <img class="google-logo" src="google-logo.png" width="272" height="92">
+        <main id="search_section">
+            <img class="google-logo" src="./images/google-logo.png">
             <form>
-                <input type="text"><br>
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky">
+                <input class="search-input" type="text">
+                <div class="search-button-group">
+                    <input class="search-button" type="submit" value="Google Search">
+                    <input class="search-button" type="submit" value="I'm Feeling Lucky">
+                </div>
             </form>
-        </div>
+        </main>
         <footer>
             <ul class="footer-left">
                 <li><a href="#">Advertising</a></li>
