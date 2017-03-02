@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Google (mggwxyz)</title>
-    <link rel="icon" href="./images/google-favicon.png" type="image/x-icon">
+    <title>Google | mggwxyz</title>
+    <link rel="icon" href="images/google-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="./css/google-homepage.css">
 </head>
@@ -19,13 +19,19 @@
         </header>
         <main id="search_section">
             <img class="google-logo" src="./images/google-logo.png">
-            <form>
-                <input class="search-input" type="text">
+            <form role="search" method="get" action="http://google.com/search">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" name="q">
+                </div>
                 <div class="search-button-group">
-                    <input class="search-button" type="submit" value="Google Search">
-                    <input class="search-button" type="submit" value="I'm Feeling Lucky">
+                    <input class="search-button" type="button" value="Google Search">
+                    <input class="search-button" type="button" value="I'm Feeling Lucky">
                 </div>
             </form>
+            <div class="icon-source-description">
+                <p><strong>Search for something!</strong> C'mon. Just do it already.</p>
+                <p>Icons made by <a href="http://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+            </div>
         </main>
         <footer>
             <ul class="footer-left">
