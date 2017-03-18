@@ -7,7 +7,7 @@ the google homepage using my new found knowledge of HTML and CSS
 
 ## Try It Out
 
-[http://mggwxyz.github.io/google-homepage](http://mggwxyz.github.io/google-homepage)
+[https://mggwxyz.github.io/google-homepage](https://mggwxyz.github.io/google-homepage)
 
 ## Inspiration
 
