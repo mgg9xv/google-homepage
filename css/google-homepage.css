@@ -559,16 +559,32 @@ svg .icon {
 }
 
 svg:hover .icon {
+     fill: #333333;
+}
+
+a:focus .icon {
     fill: #333333;
 }
 
 svg {
     height: 16px;
     width: 16px;
+    margin: 0 0.5rem;
 }
+
 
 #microphone-svg {
     position: relative;
     top: 0;
     right: 0;
+}
+
+#account-icon {
+    width: 32px;
+    height: 32px;
+}
+
+#notifications-icon {
+    width: 20px;
+    height: 20px;
 }

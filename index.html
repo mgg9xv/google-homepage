@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Google | mggwxyz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" href="images/google-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./css/google-homepage.css">
 </head>
@@ -12,7 +13,7 @@
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
                 <li>
-                    <a href="#">
+                    <a title="Google Apps" href="#">
                         <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
                             <desc>Created with Sketch.</desc>
@@ -33,8 +34,8 @@
                 </li>
 
                 <li>
-                    <a href="#">
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <a title="0 Google Notifications" href="#">
+                        <svg id="notifications-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
                             <desc>Created with Sketch.</desc>
                             <defs></defs>
@@ -43,8 +44,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <a title="You" href="#">
+                        <svg id="account-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
                             <desc>Created with Sketch.</desc>
                             <defs></defs>
@@ -59,27 +60,10 @@
             <form role="search" method="get" action="http://google.com/search">
                 <div class="search-input-container">
                     <input id="search-input" class="search-input" type="text" name="q">
-
-
-                    <svg id="microphone-svg" width="24px" height="24px"  viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-                        <desc>Created with Sketch.</desc>
-                        <defs>
-                            <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
-                            <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="24" fill="white">
-                                <use xlink:href="#path-1"></use>
-                            </mask>
-                        </defs>
-                        <g id="microphone-icon" class="icon" stroke="none" fill="none" fill-rule="evenodd">
-                            <use id="Rectangle-2" stroke="#979797" mask="url(#mask-2)" stroke-width="2" fill="#D8D8D8" opacity="0" xlink:href="#path-1"></use>
-                            <path d="M6,13 L8,13 C8,13 7.76765396,17 12,17 C15.8866761,17 16,13 16,13 L18,13 C18,13 18,15.4158114 16.663976,17 C15.3279521,18.5841886 13.0074378,19.0741076 13.0074378,19.0741076 L13.0074378,22.1139227 L11.002282,22.1139227 L11.002282,19.0741076 C11.002282,19.0741076 8.67771741,18.8670608 7.3388587,17 C6,15.1329392 6,13 6,13 Z" id="Path" class="icon" fill="#000000"></path>
-                            <path d="M9,5 C9,3.34314575 10.3431458,2 12,2 C13.6568542,2 15,3.34314575 15,5 L15,13 C15,14.6568542 13.6568542,16 12,16 C10.3431458,16 9,14.6568542 9,13 L9,5 Z" id="Combined-Shape" class="icon" fill="#000000"></path>
-                        </g>
-                    </svg>
                 </div>
                 <div class="search-button-group">
-                    <input class="search-button" type="button" value="Google Search">
-                    <input class="search-button" type="button" value="I'm Feeling Lucky">
+                    <input class="search-button" type="submit" value="Google Search">
+                    <input class="search-button" type="submit" value="I'm Feeling Lucky">
                 </div>
             </form>
             <div class="icon-source-description">
