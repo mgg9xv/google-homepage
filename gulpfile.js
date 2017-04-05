@@ -9,7 +9,7 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
-var ghPages = require('gh-pages');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('watch', ['browserSync', 'sass'],function(){
     gulp.watch('src/scss/*', ['sass']);
