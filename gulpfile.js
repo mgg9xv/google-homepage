@@ -41,16 +41,14 @@ gulp.task('useref', function(){
 
 gulp.task('images', function() {
     return gulp.src('src/images/**/*.+(png|jpg|jpeg|gif|svg|ico)')
-        .pipe(cache(imagemin({
+        .pipe(imagemin({
             interlaced: true,
-        })))
+        }))
         .pipe(gulp.dest('dist/images'))
 });
 
 gulp.task('clean', function() {
-    return del.sync('dist').then(function(cb) {
-        return cache.clearAll(cb);
-    });
+    return del.sync('dist');
 })
 
 gulp.task('clean:dist', function() {
