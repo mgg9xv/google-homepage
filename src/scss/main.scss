@@ -1,5 +1,3 @@
-
-
 html, body {
 
   height: 100%;
@@ -174,7 +172,7 @@ svg {
 .icon-link {
   text-decoration: none;
   
-  &:hover {
+  &:hover, &:hover {
     text-decoration: none;
   }
 }
