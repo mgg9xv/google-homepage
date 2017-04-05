@@ -141,5 +141,5 @@ svg {
 
 .icon-link {
   text-decoration: none; }
-  .icon-link:hover {
+  .icon-link:hover, .icon-link:hover {
     text-decoration: none; }

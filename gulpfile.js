@@ -9,6 +9,7 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
+var ghPages = require('gh-pages');
 
 gulp.task('watch', ['browserSync', 'sass'],function(){
     gulp.watch('src/scss/*', ['sass']);
@@ -70,4 +71,12 @@ gulp.task('build', function(callback) {
         ['useref', 'images'],
         callback
     )
+});
+
+gulp.task('deploy', function(){
+    gulp.src('./dist/**/*')
+        .pipe(ghPages({
+            origin: "origin",
+            branch: "gh-pages"
+        }));
 });
