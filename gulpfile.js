@@ -8,7 +8,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
-var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync');
 
 gulp.task('watch', ['browserSync', 'sass'],function(){
     gulp.watch('src/scss/*', ['sass']);
@@ -24,7 +24,7 @@ gulp.task('browserSync', function(){
 });
 
 gulp.task('sass', function(){
-    return gulp.src('src/scss/*')
+    return gulp.src('src/scss/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.reload({
@@ -58,7 +58,9 @@ gulp.task('clean:dist', function() {
 });
 
 gulp.task('default', function(callback) {
-    runSequence(['sass', 'browserSync'], 'watch',
+    runSequence(
+        ['sass', 'browserSync'],
+        'watch',
         callback
     )
 });
