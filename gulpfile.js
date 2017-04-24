@@ -51,7 +51,7 @@ gulp.task('clean', function() {
     return del.sync('dist');
 });
 
-gulp.task('default', function(callback) {
+gulp.task('develop', function(callback) {
     runSequence(
         ['sass', 'browserSync'],
         'watch',

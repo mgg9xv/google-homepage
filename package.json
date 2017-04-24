@@ -4,9 +4,9 @@
   "description": "An exercise to reverse engineer the google-homepage and build a replica",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "http-server",
-    "prod-server": "npm i && gulp build && cd dist && http-server -p 3000"
+    "dev": "npm i & gulp develop",
+    "demo": "gulp build && cd dist && http-server -p -o 3000",
+    "deploy": "npm i && gulp build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
