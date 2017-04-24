@@ -9,7 +9,6 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
-var ghPages = require('gulp-gh-pages');
 
 gulp.task('watch', ['browserSync', 'sass'],function(){
     gulp.watch('src/scss/*', ['sass']);
@@ -50,10 +49,6 @@ gulp.task('images', function() {
 
 gulp.task('clean', function() {
     return del.sync('dist');
-})
-
-gulp.task('clean:dist', function() {
-    return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 });
 
 gulp.task('default', function(callback) {
@@ -66,17 +61,9 @@ gulp.task('default', function(callback) {
 
 gulp.task('build', function(callback) {
     runSequence(
-        'clean:dist',
+        'clean',
         'sass',
         ['useref', 'images'],
         callback
     )
-});
-
-gulp.task('deploy', function(){
-    gulp.src('./dist/**/*')
-        .pipe(ghPages({
-            origin: "origin",
-            branch: "gh-pages"
-        }));
 });
