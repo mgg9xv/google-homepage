@@ -4,9 +4,10 @@
   "description": "An exercise to reverse engineer the google-homepage and build a replica",
   "main": "index.js",
   "scripts": {
-    "dev": "npm i & gulp develop",
-    "demo": "gulp build && cd dist && http-server -p -o 3000",
-    "deploy": "npm i && gulp build && gh-pages -d dist"
+    "start": "gulp build && cd dist && http-server -p -o 8080",
+    "dev": "gulp develop",
+    "demo": "npm start",
+    "deploy": "gulp build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
