@@ -1,8 +1,7 @@
 {
   "name": "google-homepage",
   "version": "1.0.0",
-  "description": "An exercise to reverse engineer the google-homepage and build a replica",
-  "main": "index.js",
+  "description": "The iconic Google homepage reverse engineered into simple HTML and CSS",
   "scripts": {
     "start": "gulp build && cd dist && http-server -p 8080 -o",
     "dev": "gulp develop",
@@ -16,7 +15,7 @@
   "keywords": [
     "google"
   ],
-  "author": "Michael Gilbertson",
+  "author": "Michael Gilbertson <mggwxyz@gmail.com> (https://michaelgilbertson.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mggwxyz/google-homepage/issues"
